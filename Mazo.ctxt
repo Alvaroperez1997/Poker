@@ -2,7 +2,13 @@
 comment0.params=
 comment0.target=Mazo()
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Mazo\r\n
-comment1.params=y
-comment1.target=int\ sampleMethod(int)
-comment1.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
-numComments=2
+comment1.params=
+comment1.target=void\ barajar()
+comment1.text=\r\n\ Baraja\ las\ cartas\ del\ mazo\r\n
+comment2.params=
+comment2.target=int\ quedan()
+comment2.text=\r\n\ Devuelve\ el\ numero\ de\ cartas\ que\ quedan\r\n
+comment3.params=
+comment3.target=java.util.ArrayList\ tomarPrimera()
+comment3.text=\r\n\ retorna\ la\ primera\ carta\ del\ mazo\ y\ \r\n\ modifica\ el\ estado\ del\ mazo\ para\ reflejar\ que\ esa\ carta\ ya\ no\ se\ encuentra\ en\ el\ mazo.\ \r\n\ En\ caso\ de\ que\ no\ queden\ cartas\ en\ el\ mazo\ devuelve\ null\r\n
+numComments=4
