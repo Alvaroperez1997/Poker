@@ -26,19 +26,20 @@ public class Carta
      */
     public String getNombre()
     {
-        String cartaEspecial = null;
+        String numero = valor + "";
         if (valor == 1) {
-            cartaEspecial = "As";
+            numero = "As";
         }
         if (valor == 11) {
-            cartaEspecial = "J";
+            numero = "J";
         }
         if (valor == 12) {
-            cartaEspecial = "Q";
+            numero = "Q";
         }
         if (valor == 13) {
-            cartaEspecial = "K";
+            numero = "K";
         }
+        String cartaEspecial = numero + " de " + palo;
         return cartaEspecial;
     }
     

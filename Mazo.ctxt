@@ -9,6 +9,6 @@ comment2.params=
 comment2.target=int\ quedan()
 comment2.text=\r\n\ Devuelve\ el\ numero\ de\ cartas\ que\ quedan\r\n
 comment3.params=
-comment3.target=java.util.ArrayList\ tomarPrimera()
+comment3.target=Carta\ tomarPrimera()
 comment3.text=\r\n\ retorna\ la\ primera\ carta\ del\ mazo\ y\ \r\n\ modifica\ el\ estado\ del\ mazo\ para\ reflejar\ que\ esa\ carta\ ya\ no\ se\ encuentra\ en\ el\ mazo.\ \r\n\ En\ caso\ de\ que\ no\ queden\ cartas\ en\ el\ mazo\ devuelve\ null\r\n
 numComments=4

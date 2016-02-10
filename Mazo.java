@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
 /**
  * Write a description of class Mazo here.
  * 
@@ -36,7 +35,7 @@ public class Mazo
     {
         Collections.shuffle(cartas);
     }
-    
+
     /**
      * Devuelve el numero de cartas que quedan
      */
@@ -44,20 +43,19 @@ public class Mazo
     {
         return cartas.size();
     }
-    
+
     /**
      * retorna la primera carta del mazo y 
      * modifica el estado del mazo para reflejar que esa carta ya no se encuentra en el mazo. 
      * En caso de que no queden cartas en el mazo devuelve null
      */
-    public ArrayList <Carta> tomarPrimera()
+    public Carta tomarPrimera()
     {
-        if (quedan() != 0) {
-            
+        Carta primeraCarta = null;
+        if (cartas.size() != 0) {
+            primeraCarta = cartas.get(0);
+            cartas.remove(0);
         }
-        else {
-            cartas = null;
-        }
-        return cartas;
+        return primeraCarta;
     }
 }
