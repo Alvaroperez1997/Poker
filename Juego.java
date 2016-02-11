@@ -69,13 +69,15 @@ public class Juego
 
     public void mostrarCartas()
     {
-        for(Jugador jugador : jugadores)
+        for(Jugador jugador : jugadores)//Recorre cada jugador del juego
         {
-            //System.out.println( "El id del jugador es " + jugador.getId() + " Y tiene " + jugador.cartasQueTieneEnLaMano());
-            System.out.println(jugador.cartasQueTieneEnLaMano());
+            System.out.println( "El id del jugador es: " + jugador.getId() + " Y tiene las cartas: ");
+            ArrayList<Carta> listCartas = jugador.cartasQueTieneEnLaMano();//Variable para guardar la lista del ArrayList de las cartas que tiene cada jugador
+            for(Carta carta : listCartas) { //Recorre cada carta que tiene el jugador en la mano
+                System.out.println(carta.getNombre());//Imprime el nombre de cada carta por pantalla guardado en la variable carta del for
+            }
         }
     }
 
 
 }
-
