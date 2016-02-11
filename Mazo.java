@@ -8,7 +8,7 @@ import java.util.Collections;
  */
 public class Mazo
 {
-    //Crea una arrayList de tipo Carta que almacena objetos de tipo Carta llamada cartas
+    //ArrayList que almacena las cartas
     private ArrayList<Carta> cartas;
 
     /**
@@ -16,11 +16,9 @@ public class Mazo
      */
     public Mazo()
     {
-        //Se inicializa la arrayList
         cartas = new ArrayList<Carta>();
         //cont es el numero de carta
         int cont = 0;
-        //Crea 52 objetos Cartas y las almacena en la ArrayList cartas
         while (cont < 13) {
             cont++;
             cartas.add(new Carta(cont, "Pícas"));
@@ -35,7 +33,6 @@ public class Mazo
      */
     public void barajar()
     {
-        //Baraja aleatoriamente las cartas
         Collections.shuffle(cartas);
     }
 
@@ -44,7 +41,6 @@ public class Mazo
      */
     public int quedan()
     {
-        //numero de cartas que quedan en la baraja
         return cartas.size();
     }
 
@@ -55,8 +51,6 @@ public class Mazo
      */
     public Carta tomarPrimera()
     {
-        //Si quedan cartas en el mazo devuelve la primera carta de la arrayList cartas
-        //Sino devuelve null
         Carta primeraCarta = null;
         if (cartas.size() != 0) {
             primeraCarta = cartas.get(0);

@@ -8,7 +8,6 @@ public class Jugador
     private ArrayList <Carta> cartasEnMano;
     //Atributo el cual contendra el id del jugador
     private int id;
-    
 
     /**
      * Constructor para la clase Jugador
@@ -36,15 +35,18 @@ public class Jugador
     public void recibirCarta(Mazo a)
     {
         cartasEnMano.add(a.tomarPrimera());//Metemos en el atributo cartasEnMano un objeto tipo carta,
-                                            //invocando el metodo tomarPrimera que devuelve la primera carta del mazo
+        //invocando el metodo tomarPrimera que devuelve la primera carta del mazo
     }
 
-    /**
-     * Metodo que devuelve un ArrayList con todas las cartas que el jugador tiene en la mano
-     */
-    public ArrayList <Carta> cartasQueTieneEnLaMano()
+    public ArrayList<String> cartasQueTieneEnLaMano()
     {
-        return cartasEnMano;
+
+        ArrayList<String> cadenas = new ArrayList<>();//Creamos variable ArrayList que almacena Strings
+        for(Carta carta : cartasEnMano){//Reccorremos el ArralistQue tiene el jugador de sus cartas
+            cadenas.add(carta.getNombre());
+
+        }
+        return cadenas;
     }
 }
 

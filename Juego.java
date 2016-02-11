@@ -52,7 +52,7 @@ public class Juego
         int contCartas = 0;//Contador de vueltas por cada vez que ha dado una carta a todos los jugadores.
         //Si hay cartas en el mazo
         if (mazo.quedan()>0){
-            while(mazo.quedan() >= (jugadores.size() - (cont-1)) && (contCartas != 5)) {
+            while(contCartas != 5) {
                 jugadores.get(cont - 1).recibirCarta(mazo);
                 if (cont == jugadores.size()){
                     cont = 0;
@@ -67,14 +67,15 @@ public class Juego
         }
     }
 
-    public void mostrarCartas()
+     /**
+     *  Método que muestra por pantalla el id de cada jugador junto a la cartas que tiene en la mano.
+     */
+    public void mostrarCartasJugadores()
     {
-        for(Jugador jugador : jugadores)//Recorre cada jugador del juego
-        {
-            System.out.println( "El id del jugador es: " + jugador.getId() + " Y tiene las cartas: ");
-            ArrayList<Carta> listCartas = jugador.cartasQueTieneEnLaMano();//Variable para guardar la lista del ArrayList de las cartas que tiene cada jugador
-            for(Carta carta : listCartas) { //Recorre cada carta que tiene el jugador en la mano
-                System.out.println(carta.getNombre());//Imprime el nombre de cada carta por pantalla guardado en la variable carta del for
+        for (Jugador jugador : jugadores){//Recorre cada jugador del juego
+            System.out.println("El jugador con la Id " + jugador.getId() + " tiene en la mano las siguiente/s carta/s: "  );
+            for(String carta : jugador.cartasQueTieneEnLaMano()){//Recorre cada String que tiene el jugador en la mano
+                System.out.println(carta);//Imprime el nombre de cada carta por pantalla guardado en la variable carta del for
             }
         }
     }
