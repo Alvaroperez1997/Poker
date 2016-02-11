@@ -1,0 +1,47 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files (x86)\BlueJ\jdk\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.8.2.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-core.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-device.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-gpio-extension.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-service.jar;C:\Users\Bilbo\Desktop\Programación\Ejercicios\Cartas
+-d
+C:\Users\Bilbo\Desktop\Programación\Ejercicios\Cartas\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\Program Files (x86)\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+C:\Users\Bilbo\Desktop\Programación\Ejercicios\Cartas\Juego.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\Bilbo\Desktop\Programación\Ejercicios\Cartas\Juego.java...
+C:\Users\Bilbo\Desktop\Programación\Ejercicios\Cartas\Juego.java:49: error: <identifier> expected
+            ugador.
+                   ^
+C:\Users\Bilbo\Desktop\Programación\Ejercicios\Cartas\Juego.java:49: error: not a statement
+            ugador.
+                  ^
+C:\Users\Bilbo\Desktop\Programación\Ejercicios\Cartas\Juego.java:54: error: illegal start of expression
+    public void mostrarCartas()
+    ^
+C:\Users\Bilbo\Desktop\Programación\Ejercicios\Cartas\Juego.java:54: error: illegal start of expression
+    public void mostrarCartas()
+           ^
+C:\Users\Bilbo\Desktop\Programación\Ejercicios\Cartas\Juego.java:54: error: ';' expected
+    public void mostrarCartas()
+                             ^
+C:\Users\Bilbo\Desktop\Programación\Ejercicios\Cartas\Juego.java:62: error: reached end of file while parsing
+}
+ ^
+6 errors

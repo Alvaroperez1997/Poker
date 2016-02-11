@@ -17,6 +17,7 @@ public class Carta
      */
     public Carta(int valor, String palo)
     {
+        //Se asignan los atributos a un objeto Carta
         this.valor = valor;
         this.palo = palo;
     }
@@ -26,6 +27,7 @@ public class Carta
      */
     public String getNombre()
     {
+        //Cambia los valores 1, 11, 12 y 13 por una cadena de la baraja francesa
         String numero = valor + "";
         if (valor == 1) {
             numero = "As";
